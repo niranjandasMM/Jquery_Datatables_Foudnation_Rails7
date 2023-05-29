@@ -1,0 +1,28 @@
+<div class="top-bar">
+  <div class="top-bar-left">
+    <ul class="dropdown menu" data-dropdown-menu>
+      <li class="menu-text">All in one rails application</li>
+      <li>
+        <a href="#">Features</a>
+        <ul class="menu vertical">
+          <li><a href="<%= 'home/index' %>">Datatables</a></li>
+          <li><a href="<%= 'pins' %>">Posting - BLog etc.</a></li>
+          <li><a href="<%= 'user_viri' %>">A Virus which sends Mail</a></li>
+        </ul>
+      </li>
+      <% if user_signed_in? %>
+        <%= link_to "LogOut", destroy_user_session_path, method: :delete, data: {turbo_method: :delete}, class:"nav-link" %>
+        <li><a href="<%= edit_user_registration_path %>">Profile</a></li>
+      <% else %>
+      <li><a href="<%= new_user_session_path %>">Login</a></li>
+      <li><a href="<%= new_user_registration_path %>">Sign Up</a></li>
+      <% end %>
+    </ul>
+  </div>
+  <div class="top-bar-right">
+    <ul class="menu">
+      <li><input type="search" placeholder="Search"></li>
+      <li><button type="button" class="button">Search</button></li>
+    </ul>
+  </div>
+</div>

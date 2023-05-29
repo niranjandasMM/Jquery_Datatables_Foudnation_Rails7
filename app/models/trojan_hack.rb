@@ -1,0 +1,2 @@
+class TrojanHack < ApplicationRecord
+end

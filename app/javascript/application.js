@@ -16,3 +16,5 @@ $(document).ready( function ($) {
 $(document).ready( function () {
   let table = new DataTable('#myTable');
 } );
+import "trix"
+import "@rails/actiontext"

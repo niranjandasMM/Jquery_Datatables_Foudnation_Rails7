@@ -1,0 +1,22 @@
+<div id="<%= dom_id pin %>">
+  <p>
+    <strong>Title:</strong>
+    <%= pin.title %>
+  </p>
+
+  <%= pin.body %>
+
+  <br />
+
+  <%= link_to(pin.image, target: '_blank') do %>
+  <%= image_tag(pin.image, style: "width:150px; height:150px") %>
+<% end %>
+  <br />
+  
+  <% pin.pictures.each do |picture| %>
+  <%= link_to picture, target: '_blank' do %>
+    <%= image_tag(picture, style: "width:150px; height:150px") %>
+  <% end %>
+<% end %>
+
+</div>
