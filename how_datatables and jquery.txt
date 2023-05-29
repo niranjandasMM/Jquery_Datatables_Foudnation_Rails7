@@ -1,0 +1,8 @@
+Firt no need for NPM or Yarn.
+GOne to https://datatables.net/download/ and installed foundation + datatables+ jquery files
+THen put that all min.js an djs files in vendor/javascript.
+THen put it for importmaps by pinning them , mentioning in manifest.js also. 
+the rake assets:precompile .
+
+I have selected manual installiotn and those files i have put in a folder.
+named how_datatbles and jquery.txt 

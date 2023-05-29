@@ -1,0 +1,65 @@
+<h1>Home#index</h1>
+<p>Find me in app/views/home/index.html.erb</p>
+
+<div data-controller ="home">
+
+    <p>Welcome to home page</p>
+
+    <button type="button" class="button" data-toggle="offCanvasLeft1">Open Left</button>
+    <button type="button" class="button" data-toggle="offCanvasRight1">Open Right</button>
+    <button type="button" class="button" data-toggle="offCanvasTop1">Open Top</button>
+    <button type="button" class="button" data-toggle="offCanvasBottom1">Open Bottom</button>
+
+    <div class="cell">
+        <div class="off-canvas-wrapper">
+          <div class="off-canvas position-left" id="offCanvasLeft1" data-off-canvas>
+            <!-- Your menu or Off-canvas content goes here -->
+          </div>
+          <div class="off-canvas position-right" id="offCanvasRight1" data-off-canvas>
+            <!-- Your menu or Off-canvas content goes here -->
+          </div>
+          <div class="off-canvas position-top" id="offCanvasTop1" data-off-canvas>
+            <!-- Your menu or Off-canvas content goes here -->
+          </div>
+          <div class="off-canvas position-bottom" id="offCanvasBottom1" data-off-canvas>
+            <!-- Your menu or Off-canvas content goes here -->
+          </div>
+          <div class="off-canvas-content" data-off-canvas-content>
+            <img src="https://placehold.it/300x300" class="" height="" width="" alt="">
+          </div>
+        </div>
+    </div>
+
+
+    <table id="example" class="display" style="width:100%">
+      <thead>
+        <tr>
+          <th>Lastname</th>
+          <th>Firstname</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Messiani</td>
+          <td>Cristiano</td>
+        </tr>
+        <tr>
+          <td>Rolando</td>
+          <td>Esteban</td>
+        </tr>
+        <tr>
+          <td>Traoré</td>
+          <td>Adam</td>
+        </tr>
+      </tbody>
+    </table>
+
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    let table = new DataTable('#example');
+  });
+</script>
+
+</div>
